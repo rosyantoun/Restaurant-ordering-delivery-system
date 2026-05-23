@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lenovo\\OneDrive\\Desktop\\food-delivery-app\\food-delivery-fullstack\\backend\\FoodDeliveryAPI.csproj": {}
+    "C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Restaurant-ordering-delivery-system\\backend\\FoodDeliveryAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lenovo\\OneDrive\\Desktop\\food-delivery-app\\food-delivery-fullstack\\backend\\FoodDeliveryAPI.csproj": {
+    "C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Restaurant-ordering-delivery-system\\backend\\FoodDeliveryAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenovo\\OneDrive\\Desktop\\food-delivery-app\\food-delivery-fullstack\\backend\\FoodDeliveryAPI.csproj",
+        "projectUniqueName": "C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Restaurant-ordering-delivery-system\\backend\\FoodDeliveryAPI.csproj",
         "projectName": "FoodDeliveryAPI",
-        "projectPath": "C:\\Users\\lenovo\\OneDrive\\Desktop\\food-delivery-app\\food-delivery-fullstack\\backend\\FoodDeliveryAPI.csproj",
+        "projectPath": "C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Restaurant-ordering-delivery-system\\backend\\FoodDeliveryAPI.csproj",
         "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenovo\\OneDrive\\Desktop\\food-delivery-app\\food-delivery-fullstack\\backend\\obj\\",
+        "outputPath": "C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Restaurant-ordering-delivery-system\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
