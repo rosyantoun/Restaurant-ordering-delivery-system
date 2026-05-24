@@ -1,3 +1,71 @@
+<<<<<<< HEAD
+body {
+  background: linear-gradient(135deg, #111, #222);
+}
+
+.cart-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 25px;
+  background: linear-gradient(135deg, #222, #333);
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(255, 165, 0, 0.2);
+  color: white;
+}
+
+.cart-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffa500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cart-items {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #333;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 8px rgba(255, 165, 0, 0.2);
+  margin-bottom: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.cart-item:hover {
+  transform: scale(1.02);
+}
+
+.cart-item img {
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.cart-item-details {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.cart-item-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffa500;
+}
+
+.cart-item-price {
+  font-size: 16px;
+  color: #ddd;
+=======
 .cart-page {
   min-height: calc(100vh - 76px);
   padding: 26px 24px 58px;
@@ -102,11 +170,108 @@
 
 .cart-item-total strong {
   font-weight: 650;
+>>>>>>> origin/main
 }
 
 .cart-item-quantity {
   display: flex;
   align-items: center;
+<<<<<<< HEAD
+  gap: 10px;
+}
+
+.cart-item-quantity button {
+  background: linear-gradient(135deg, #ffa500, #ff7b00);
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.cart-item-quantity button:hover {
+  background: linear-gradient(135deg, #ff8c00, #ff5e00);
+  transform: scale(1.1);
+}
+
+.cart-item-remove {
+  color: #ccc;
+  border: none;
+  padding: 6px 12px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cart-item-remove:hover {
+  color: #dc3545;
+  transform: scale(1.1);
+}
+
+.cart-checkout {
+  width: 100%;
+  background: linear-gradient(135deg, #ffa500, #ff7b00);
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.cart-checkout:hover {
+  background: linear-gradient(135deg, #ff8c00, #ff5e00);
+}
+
+.payment-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.payment-buttons .cancel-button{
+  width: 100%;
+}
+.payment-modal {
+  background: #222;
+  padding: 25px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(255, 165, 0, 0.3);
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+=======
 }
 
 .quantity-box {
@@ -267,11 +432,146 @@
   box-shadow: 0 24px 60px rgba(25, 17, 11, 0.24);
   animation: fadeIn 0.25s ease-in-out;
   box-sizing: border-box;
+>>>>>>> origin/main
 }
 
 .payment-buttons {
   display: flex;
   gap: 12px;
+<<<<<<< HEAD
+  margin-top: 15px;
+}
+
+.pay-button, .cancel-button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pay-button {
+  background: linear-gradient(135deg, #ffa500, #ff7b00);
+  color: white;
+}
+
+.pay-button:hover {
+  background: linear-gradient(135deg, #ff8c00, #ff5e00);
+  transform: scale(1.05);
+}
+
+.cancel-button {
+  background: linear-gradient(135deg, #dc3545, #c82333);
+  color: white;
+}
+
+.cancel-button:hover {
+  background: linear-gradient(135deg, #c82333, #a71d2a);
+  transform: scale(1.05);
+}
+
+.feedback-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.feedback-modal {
+  background: #222;
+  padding: 25px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(255, 165, 0, 0.3);
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+  color: white;
+}
+
+.feedback-modal h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #ffa500;
+  text-transform: uppercase;
+}
+
+.feedback-modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-modal select{
+  width: 97%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ffa500;
+  border-radius: 8px;
+  background: #333;
+  color: white;
+  font-size: 16px;
+}
+.payment-modal input{
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ffa500;
+  border-radius: 8px;
+  background: #333;
+  color: white;
+  font-size: 16px;
+}
+
+.feedback-modal input,
+.feedback-modal textarea {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ffa500;
+  border-radius: 8px;
+  background: #333;
+  color: white;
+  font-size: 16px;
+}
+
+.feedback-modal textarea {
+  height: 100px;
+  resize: none;
+}
+
+.feedback-modal button[type="submit"] {
+  background-color: #ff8c00;
+  width: 96%;
+}
+
+.feedback-modal button[type="submit"]:hover {
+  background-color: #ffa500;
+}
+
+.feedback-modal button {
+  width: 100%;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+=======
   margin-top: 16px;
 }
 
@@ -366,10 +666,19 @@
 
 .feedback-modal button[type="submit"]:hover {
   background-color: #955329;
+>>>>>>> origin/main
 }
 
 .close-feedback {
   position: absolute;
+<<<<<<< HEAD
+  top: 10px;
+  left: 180px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+=======
   top: 14px;
   right: 14px;
   width: 30px;
@@ -379,10 +688,110 @@
   background: transparent;
   color: #695b50;
   font-size: 18px;
+>>>>>>> origin/main
   cursor: pointer;
 }
 
 .close-feedback:hover {
+<<<<<<< HEAD
+  color: #ffa500;
+}
+
+/* Add these to the bottom of CartPage.css */
+
+.close-payment {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.close-payment:hover { color: #fff; }
+
+.payment-total {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.payment-total strong { color: #f5a623; font-size: 1.3rem; }
+
+.payment-methods {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.payment-method-card {
+  border: 2px solid #444;
+  border-radius: 10px;
+  padding: 16px 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.payment-method-card:hover { border-color: #f5a623; color: #fff; }
+
+.payment-method-card.selected {
+  border-color: #f5a623;
+  background: rgba(245, 166, 35, 0.1);
+  color: #f5a623;
+  font-weight: bold;
+}
+
+.method-icon { font-size: 1.8rem; }
+
+.card-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.card-fields input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 7px;
+  border: 1px solid #444;
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+}
+
+.card-fields input:focus { outline: none; border-color: #f5a623; }
+
+.card-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.cash-note {
+  text-align: center;
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+  padding: 12px;
+  background: #1a1a1a;
+  border-radius: 8px;
+}
+
+.payment-modal { position: relative; }
+=======
   background-color: #f2e7dc;
   color: #a85f31;
 }
@@ -460,3 +869,4 @@
     transform: translateY(0);
   }
 }
+>>>>>>> origin/main

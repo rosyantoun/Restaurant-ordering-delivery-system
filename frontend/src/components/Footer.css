@@ -1,4 +1,54 @@
 .footer {
+<<<<<<< HEAD
+    background-color: #222;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-section {
+    margin: 15px;
+}
+
+.footer-section h3 {
+    font-family: 'Dancing Script';
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+.social-icons {
+    margin-top: 70px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 22px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #f39c12;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .footer {
+        display: flex;
+=======
     background-color: #ffffff;
     color: #25211e;
     padding: 28px 32px 16px;
@@ -76,10 +126,21 @@
         flex-wrap: wrap;
         gap: 14px;
         text-align: left;
+>>>>>>> origin/main
     }
 
     .footer-section {
         flex: 1;
+<<<<<<< HEAD
+        padding: 0 15px;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        margin-top: 40px;
+    }
+}
+=======
         padding: 0 12px;
         min-width: 170px;
     }
@@ -105,3 +166,4 @@
         font-size: 25px;
     }
 }
+>>>>>>> origin/main
