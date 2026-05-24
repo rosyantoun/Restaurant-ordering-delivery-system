@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { api } from "./api";
 
 export const adminMenuApi = {
@@ -23,3 +24,7 @@ export const adminMenuApi = {
     return data.url;
   },
 };
+=======
+// API service for Admin Menu — to be implemented by Serena
+export {};
+>>>>>>> origin/main

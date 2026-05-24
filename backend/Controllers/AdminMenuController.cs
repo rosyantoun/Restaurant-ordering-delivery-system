@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+<<<<<<< HEAD
 using backend.DTOs.Menu;
 using backend.Services;
 
@@ -40,5 +41,16 @@ public class AdminMenuController : ControllerBase
     {
         var ok = await _menu.DeleteAsync(id);
         return ok ? NoContent() : NotFound();
+=======
+
+namespace backend.Controllers
+{
+    [ApiController]
+    [Route("api/admin/menu")]
+    [Authorize(Roles = "Admin")]
+    public class AdminMenuController : ControllerBase
+    {
+        // Serena will implement menu CRUD endpoints here
+>>>>>>> origin/main
     }
 }

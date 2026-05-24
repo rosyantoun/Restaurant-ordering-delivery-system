@@ -1,0 +1,335 @@
+.admin-orders-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #f7f7f7;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.admin-orders-container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  color: #2f2f2f;
+  box-sizing: border-box;
+}
+
+.admin-orders-title {
+  position: relative;
+  margin: 0 0 18px;
+  padding-left: 14px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #222;
+  text-align: left;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.admin-orders-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 4px;
+  height: 24px;
+  border-radius: 999px;
+  background: #a85f31;
+}
+
+/* ── KPI CARDS ── */
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.admin-stat-card {
+  background: #fff;
+  border: 1px solid #e7e2dd;
+  border-left: 3px solid #a85f31;
+  border-radius: 10px;
+  padding: 12px 14px;
+  min-height: 52px;
+  box-shadow: 0 2px 8px rgba(30, 20, 10, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.admin-stat-card span {
+  font-size: 13px;
+  color: #5a5652;
+  font-weight: 500;
+}
+
+.admin-stat-card strong {
+  font-size: 19px;
+  line-height: 1;
+  color: #222;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── FILTER ROW ── */
+.admin-filter-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #5a5652;
+  flex-wrap: wrap;
+}
+
+.admin-filter-row label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #5a5652;
+  white-space: nowrap;
+}
+
+.admin-filter-row select {
+  width: auto;
+  padding: 0 12px;
+  height: 38px;
+  border: 1px solid #d9d4cf;
+  border-radius: 8px;
+  font-size: 14px;
+  min-width: 130px;
+  max-width: 200px;
+  cursor: pointer;
+  color: #2f2f2f;
+  background: #fff;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.admin-filter-row select:focus {
+  outline: none;
+  border-color: #a85f31;
+  box-shadow: 0 0 0 3px rgba(168, 95, 49, 0.12);
+}
+
+/* ── ORDER LIST ── */
+.admin-orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  overflow: visible;
+  box-shadow: none;
+}
+
+.admin-order-card {
+  background: #fff;
+  padding: 16px;
+  border: 1px solid #e7e2dd;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(30, 20, 10, 0.05);
+  transition: background-color 0.18s ease, border-color 0.18s ease;
+}
+
+.admin-order-card:hover {
+  background: #fcfaf8;
+  border-color: #ddd5ce;
+}
+
+.admin-order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee9e4;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.admin-order-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.admin-order-id {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+}
+
+.admin-order-customer {
+  font-size: 14px;
+  color: #5a5652;
+  font-weight: 400;
+}
+
+.admin-order-date {
+  font-size: 12px;
+  color: #7a7068;
+}
+
+.admin-order-address {
+  background: #fcfaf8;
+  padding: 9px 12px;
+  border-radius: 8px;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #4d4d4d;
+  border: 1px solid #eee9e4;
+}
+
+/* ── ITEMS LIST ── */
+.admin-order-items {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #4d4d4d;
+}
+
+.admin-order-items li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee9e4;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 16px;
+  font-weight: 400;
+}
+
+.admin-order-items li:last-child {
+  border-bottom: none;
+}
+
+.admin-order-items li span:first-child {
+  color: #4d4d4d;
+  font-weight: 400;
+}
+
+.admin-order-items li span:last-child {
+  color: #222;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── FOOTER ── */
+.admin-order-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid #eee9e4;
+  margin-top: 10px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.admin-order-total {
+  font-size: 15px;
+  color: #222;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── STATUS SELECT ── */
+.admin-status-select {
+  display: inline-block;
+  width: fit-content;
+  min-width: 0;
+  max-width: 100%;
+  height: 38px;
+  padding: 0 12px;
+  border: 1px solid #d9d4cf;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #2f2f2f;
+  background: #fff;
+  white-space: nowrap;
+  font-family: inherit;
+}
+
+.admin-status-select:focus {
+  outline: none;
+  border-color: #a85f31;
+  box-shadow: 0 0 0 3px rgba(168, 95, 49, 0.12);
+}
+
+.status-pending {
+  background: #fff8ee;
+  color: #9a6700;
+  border-color: #f4d8a4;
+}
+
+.status-preparing {
+  background: #f5f8fc;
+  color: #5e748a;
+  border-color: #d7e1ec;
+}
+
+.status-outfordelivery {
+  background: #f7f5fb;
+  color: #716185;
+  border-color: #ddd5ea;
+}
+
+.status-delivered {
+  background: #f3faf4;
+  color: #4f7f57;
+  border-color: #cfe4d3;
+}
+
+.status-cancelled {
+  background: #fcf4f3;
+  color: #925c56;
+  border-color: #ead2cf;
+}
+
+@media screen and (max-width: 900px) {
+  .admin-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .admin-orders-page {
+    padding: 24px 14px;
+  }
+
+  .admin-orders-title {
+    font-size: 23px;
+    margin-bottom: 16px;
+  }
+
+  .admin-orders-title::before {
+    height: 23px;
+  }
+
+  .admin-stats {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+
+  .admin-filter-row {
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .admin-order-card {
+    padding: 14px;
+  }
+
+  .admin-order-footer {
+    align-items: flex-start;
+  }
+}

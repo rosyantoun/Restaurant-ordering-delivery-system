@@ -20,11 +20,19 @@ const Footer = () => {
       </div>
 
       <nav className="social-icons" aria-label="Social Media Links">
+<<<<<<< HEAD
         <a href="https://www.facebook.com" aria-label="Facebook"><FaFacebook /></a>
         <a href="https://www.twitter.com" aria-label="Twitter"><FaTwitter /></a>
         <a href="https://www.linkedIn.com" aria-label="LinkedIn"><FaLinkedinIn /></a>
         <a href="https://www.instagram.com" aria-label="Instagram"><FaInstagram /></a>
         <a href="https://www.pinterest.com" aria-label="Pinterest"><FaPinterest /></a>
+=======
+        <a href="#" aria-label="Facebook"><FaFacebook /></a>
+        <a href="#" aria-label="Twitter"><FaTwitter /></a>
+        <a href="#" aria-label="LinkedIn"><FaLinkedinIn /></a>
+        <a href="#" aria-label="Instagram"><FaInstagram /></a>
+        <a href="#" aria-label="Pinterest"><FaPinterest /></a>
+>>>>>>> origin/main
       </nav>
 
       <div className="footer-section">
