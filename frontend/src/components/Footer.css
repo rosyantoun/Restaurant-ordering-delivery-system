@@ -1,4 +1,5 @@
 .footer {
+<<<<<<< HEAD
     background-color: #222;
     color: white;
     padding: 40px 20px;
@@ -47,10 +48,90 @@
 @media (min-width: 768px) {
     .footer {
         display: flex;
+=======
+    background-color: #ffffff;
+    color: #25211e;
+    padding: 28px 32px 16px;
+    border-top: 1px solid #eee4da;
+    box-shadow: 0 -1px 0 rgba(37, 33, 30, 0.02);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.footer-section {
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    font-size: 29px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.2px;
+    color: #211c18;
+    margin: 0 0 12px;
+}
+
+.footer-section p {
+    margin: 4px 0;
+    color: #4a4039;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section address {
+    font-style: normal;
+}
+
+.footer-section svg {
+    color: #a85f31;
+    margin-right: 6px;
+    vertical-align: -2px;
+    font-size: 14px;
+}
+
+.social-icons {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.social-icons a {
+    margin: 0;
+    font-size: 19px;
+    color: #27211d;
+    transition: color 0.2s ease;
+}
+
+.social-icons a:hover {
+    color: #a85f31;
+}
+
+.footer-bottom {
+    border-top: 1px solid #eee4da;
+    padding-top: 12px;
+    margin-top: 16px;
+    font-size: 13px;
+    color: #75685f;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 14px;
+        text-align: left;
+>>>>>>> origin/main
     }
 
     .footer-section {
         flex: 1;
+<<<<<<< HEAD
         padding: 0 15px;
     }
 
@@ -59,3 +140,30 @@
         margin-top: 40px;
     }
 }
+=======
+        padding: 0 12px;
+        min-width: 170px;
+    }
+
+    .footer-section.social {
+        flex: 0 0 auto;
+        align-self: center;
+    }
+
+    .social-icons {
+        justify-content: flex-start;
+    }
+
+    .footer-bottom {
+        flex: 1 0 100%;
+        text-align: center;
+        margin-top: 14px;
+    }
+}
+
+@media (max-width: 520px) {
+    .footer-section h3 {
+        font-size: 25px;
+    }
+}
+>>>>>>> origin/main
